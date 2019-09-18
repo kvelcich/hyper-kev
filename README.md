@@ -1,2 +1,3 @@
-# hyper-kevin
-A Hyper theme with a dark background and bright colors
+# Hyper Kevin
+A [Hyper](https://hyper.is) theme with a dark background and bright colors
+![](screenshot.png)
