@@ -1,11 +1,11 @@
 {
-  "name": "hyper-kevin",
-  "version": "0.1.0",
+  "name": "hyper-kev",
+  "version": "0.2.0",
   "description": "A Hyper theme with a dark background and bright colors",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kvelcich/hyper-kevin.git"
+    "url": "https://github.com/kvelcich/hyper-kev.git"
   },
   "author": "Kevin Velcich"
 }

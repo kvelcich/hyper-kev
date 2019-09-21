@@ -1,6 +1,5 @@
 'use strict';
 
-
 const white = '#f8f8f2'
 const lightWhite = '#fafaf6'
 const gray = '#9e9e9a'
