@@ -8,8 +8,8 @@ following command:
 
 **`$ git clone git@github.com:kvelcich/hyper-kev.git ~/.hyper_plugins/local`**
 
-**Note:** If you're using Windows Subsystem for Linux (WSL) you'll need to instead
-place that under your Windows uesr directory. For example into:
+**Note:** If you're using Windows Subsystem for Linux (WSL) you'll need to 
+instead clone the repository into the Hyper App Data folder. For example into:
 `/mnt/c/Users/kev/AppData/Roaming/Hyper/.hyper_plugins/local`
 
 Then simply add **hyper-kev** as a local plugin within your `.hyper.js` file.
