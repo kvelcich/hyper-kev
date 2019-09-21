@@ -10,7 +10,7 @@ following command:
 
 **Note:** If you're using Windows Subsystem for Linux (WSL) you'll need to instead
 place that under your Windows uesr directory. For example into:
-`/mnt/c/Users/kev/.hyper_plugins/local`
+`/mnt/c/Users/kev/AppData/Roaming/Hyper/.hyper_plugins/local`
 
 Then simply add **hyper-kev** as a local plugin within your `.hyper.js` file.
 ```javascript
@@ -21,5 +21,3 @@ localPlugins: [
 ],
 ```
 
-## Credits
-Theme and code is inspired (or copied) from [hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy).
