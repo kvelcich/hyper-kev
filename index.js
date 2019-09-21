@@ -1,71 +1,60 @@
 'use strict';
-const backgroundColor = '#121221';
-const red = '#ff6f60';
-const green = '#3aff7b';
-const yellow = '#f5ff5d';
-const blue = '#40c0ff';
-const magenta = '#ff56b9';
-const cyan = '#7ae7fd';
-const white = '#f1f1f0';
 
-exports.decorateConfig = config => Object.assign({}, config, {
-	backgroundColor,
-	foregroundColor: '#eff0ea',
-	borderColor: '#222430',
-	cursorColor: '#97979b',
-	cursorAccentColor: backgroundColor,
-	selectionColor: 'rgba(151, 151, 155, 0.2)',
-	colors: {
-		black: '#000000',
-		red,
-		green,
-		yellow,
-		blue,
-		magenta,
-		cyan,
-		white,
-		lightBlack: '#686767',
-		lightRed: red,
-		lightGreen: green,
-		lightYellow: yellow,
-		lightBlue: blue,
-		lightMagenta: magenta,
-		lightCyan: cyan,
-		lightWhite: white
-	},
+
+const white = '#f8f8f2'
+const lightWhite = '#fafaf6'
+const gray = '#9e9e9a'
+const black = '#21211d'
+const lightBlack = '#61615d'
+
+const red = '#eb5160'
+const lightRed = '#f0808b'
+const green = '#34f6f2'
+const lightGreen = '#90faf7'
+const yellow = '#ffeb70'
+const lightYellow = '#fff097'
+const blue = '#48beff'
+const lightBlue = '#79cfff'
+const magenta = '#ec91d8'
+const lightMagenta = '#f1afe2'
+const cyan = '#b3c2f2'
+const lightCyan = '#c7d2f5'
+
+const foregroundColor = white;
+const backgroundColor = '#121221'
+
+exports.decorateConfig = config => {
+  return Object.assign({}, config, {
+    backgroundColor,
+    foregroundColor,
+    borderColor: black,
+    cursorColor: lightBlack,
+    colors: {
+      black,
+      red,
+      green,
+      yellow,
+      blue,
+      magenta,
+      cyan,
+      gray,
+      lightBlack,
+      lightRed,
+      lightGreen,
+      lightYellow,
+      lightBlue,
+      lightMagenta,
+      lightCyan,
+      lightWhite
+    },
 	css: `
-		/* Hide title when only one tab */
-		.tabs_title {
-			display: none !important;
-		}
-		/* Add a highlight line below the active tab */
-		.tab_tab::before {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			height: 1px;
-			background-color: rgba(255, 106, 193, 0.4);
-			transform: scaleX(0);
-			will-change: transform;
-		}
-		.tab_tab.tab_active::before {
-			transform: scaleX(1);
-			transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
-		}
-		/* Fade the title of inactive tabs and the content of inactive panes */
-		.tab_text,
-		.term_term {
-			opacity: 0.6;
-			will-change: opacity;
-		}
-		.tab_active .tab_text,
-		.term_active .term_term {
-			opacity: 1;
-			transition: opacity 0.12s ease-in-out;
-		}
-		/* Allow custom css / overrides */
-		${config.css}
-	`
-});
+			${config.css || ''}
+			.tabs_list .tab_tab.tab_active .tab_text  {
+				background: ${backgroundColor};
+			}
+			.tab_active:before {
+				border-color: rgb(68, 71, 90);
+			}
+		`
+  })
+}
