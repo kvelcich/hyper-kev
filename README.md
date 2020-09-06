@@ -6,7 +6,7 @@ A [Hyper](https://hyper.is) theme with a dark background and bright colors
 Currently you can only install this as a local plugin. To do so run the 
 following command:
 
-**`$ git clone git@github.com:kvelcich/hyper-kev.git ~/.hyper_plugins/local`**
+**`$ git clone https://github.com/kvelcich/hyper-kev.git ~/.hyper_plugins/local`**
 
 **Note:** If you're using Windows Subsystem for Linux (WSL) you'll need to 
 instead clone the repository into the Hyper App Data folder. For example into:
